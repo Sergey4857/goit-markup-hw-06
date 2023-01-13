@@ -77,16 +77,17 @@ width: 408px;
 height: 576px;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%) scale(0.9);
+transform: translate(-50%, -50%);
 background: #FCFCFC;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
+padding-top: 72px;
 
 }
 
 .backdrop.is-hidden .modal {
 
-transform: translate(-50%, -50%) scale(0.9);
+transform: translate(-50%, -50%);
 transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -592,6 +593,101 @@ fill: #404BBF;
 {
 background-color: #31D0AA;
 }
+
+.subscribe {
+   display: flex;
+   gap: 24px;
+   text-align: center;
+}
+
+.subscribe-container{
+   margin-left: 80px;
+}
+.mail{
+
+width: 264px;
+height: 40px;
+background-color: transparent ;
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+
+}
+
+
+
+
+
+.submit-btn{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-right: 24px;
+padding-left: 24px;
+gap: 16px;
+border-radius: 4px;
+background: #4D5AE5;
+margin-bottom: 0px;
+border: transparent;
+cursor: pointer;
+}
+
+.submit-btn::after{
+content: "";
+display: block;
+width: 24px;
+height: 24px;
+
+background-image: url(./images/icon-send.svg);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.modal-title{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--header-color);
+margin-bottom: 14px;
+}
+
+.modal-form{
+padding-left: 24px;
+padding-right: 24px;
+padding-bottom: 24px;
+}
+.data-container{
+display: flex;
+flex-direction: column;
+}
+.data-title{
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.04em;
+color: #8E8F99;
+margin-bottom: 4px;
+}
+
+.data-title:not(:first-child){
+margin-top: 8px;
+
+}
+.data-comment{
+   resize: none;
+   width: 360px;
+   height: 120px;
+}
+
+
+
+
+
+
 
 
 
