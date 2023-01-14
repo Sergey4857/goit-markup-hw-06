@@ -398,24 +398,31 @@
 
    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-      <button class="modal-botton" type="button" data-modal-close>×</button>
+      <button class="modal-botton" type="button" data-modal-close>
+         <svg class="close-icon">
+            <use href="./images/icons.svg#close"></use>
+         </svg>
+
+
+      </button>
          <h2 class="modal-title">Leave your contacts and we will call you back</h2>
          <form class="modal-form">
             
       <div role="group" class="data-container" >
          <label for="name" class="data-title">Name</label>
-         <input type="text" name="name" id="name">
+         <input  type="text" name="name" id="name" class="data-field" >
          <label for="tel" class="data-title">Phone</label>
-         <input type="numder" name="number" id="tel"> 
+         <input type="tel" name="number" id="tel" class="data-field" > 
          <label for="mail" class="data-title">Email</label>
-         <input type="email" name="email" id="mail">
+         <input type="email" name="email" id="mail" class="data-field" >
          <label for="comment" class="data-title" >Comment</label>
          <textarea name="Comment" id="comment"
-         class="data-comment" ></textarea>
+         class="data-comment" placeholder="Text input" ></textarea>
       </div>
       
-   
-
+         <input type="checkbox" name="policy" id="policy">
+         <label for="policy" class="policy-text">I accept the terms and conditions of the <a href="" class="data-link">Privacy Policy</a></label>
+         <button type="submit" class="send-btn">Send</button>
 
 
          </form>
