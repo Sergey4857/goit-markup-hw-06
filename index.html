@@ -379,7 +379,7 @@
             <form class="subscribe">
 
                <label for="user-email" class="user-email">
-                  <input type="email" class="mail" id="user-email" placeholder="E-mail">
+                  <input type="email" name="email" class="mail" id="user-email" placeholder="E-mail" required>
                </label>
                <button type="submit" class="submit-btn messanger-title">Subscribe</button>
             </form>
@@ -445,7 +445,9 @@
             
                <label for="policy" class="policy-text">
                <input type="checkbox" name="policy" id="policy" class="checkbox">
-               <span class="custom-checkbox"></span> I accept the terms and conditions of the <a href=""
+               <svg class="custom-checkbox">
+               <use href="./images/icons.svg#checkbox"></use>
+               </svg> I accept the terms and conditions of the <a href=""
                      class="data-link">Privacy Policy</a></label>
             
             <button type="submit" class="send-btn">Send</button>
