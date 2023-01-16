@@ -694,7 +694,9 @@ line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8E8F99;
 margin-bottom: 4px;
-
+}
+.data-name{
+line-height: 1.33;
 }
 
 
@@ -705,6 +707,9 @@ height: 40px;
 padding-left: 38px;
 transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
 .data-field:focus{
 outline: 0;
 border-color: var(--hover-focus-color);
