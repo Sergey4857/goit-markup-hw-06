@@ -629,7 +629,7 @@ height: 40px;
 background-color: transparent ;
 border: 1px solid rgba(255, 255, 255, 0.3);
 border-radius: 4px;
-color: rgba(255, 255, 255, 0.6);
+color: #ffffff;
 padding-left: 16px;
 
 font-size: 12px;
@@ -687,6 +687,7 @@ margin-bottom: 14px;
 .data-container{
 display: flex;
 flex-direction: column;
+margin-bottom: 16px;
 }
 .data-title{
 font-size: 12px;
@@ -751,9 +752,6 @@ flex-direction: column;
 }
 .data-box:not(:last-child){
 margin-bottom: 8px;
-}
-.data-box:last-child{
-margin-bottom: 16px;
 }
 
 
